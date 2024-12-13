@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Space Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Parking Space Finder</h1>
+
+        <div>
+            <h2>Available Parking Spaces</h2>
+            <ul id="parkingList"></ul>
+        </div>
+
+        <h2>Book a Parking Spot</h2>
+        <form id="parkingForm">
+            <label for="location">Location:</label>
+            <input type="text" id="location" required>
+
+            <label for="totalSpaces">Total Spaces:</label>
+            <input type="number" id="totalSpaces" required>
+
+            <label for="availableSpaces">Available Spaces:</label>
+            <input type="number" id="availableSpaces" required>
+
+            <button type="submit">Add Parking Space</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

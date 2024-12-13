@@ -1,0 +1,15 @@
+CREATE TABLE polls (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    question VARCHAR(255),
+    options TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE votes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    poll_id INT NOT NULL,
+    option_id INT NOT NULL,
+    user_ip VARCHAR(50),
+    vote_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (poll_id) REFERENCES polls(id)
+);

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donor Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blood Bank and Donor Search</h1>
+        <form id="donorForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="bloodGroup" placeholder="Blood Group" required>
+            <input type="text" id="contact" placeholder="Contact Number" required>
+            <input type="text" id="city" placeholder="City" required>
+            <button type="submit">Add Donor</button>
+        </form>
+        <h2>Search Donors</h2>
+        <input type="text" id="searchCity" placeholder="Enter city to search">
+        <button onclick="searchDonors()">Search</button>
+        <div id="results"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

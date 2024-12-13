@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey and Polling System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Survey and Polling System</h1>
+        
+        <h2>Take the Survey</h2>
+        <form id="surveyForm">
+            <label for="question">Question:</label>
+            <input type="text" id="question" required>
+
+            <label for="options">Options (comma separated):</label>
+            <input type="text" id="options" required>
+
+            <button type="submit">Create Survey</button>
+        </form>
+
+        <h2>Existing Surveys</h2>
+        <ul id="surveyList"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

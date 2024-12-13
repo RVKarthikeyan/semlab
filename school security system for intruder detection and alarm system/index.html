@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Security System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>School Security System</h1>
+
+        <div>
+            <h2>Intruder Alerts</h2>
+            <ul id="alertList"></ul>
+        </div>
+
+        <h2>Trigger Alarm</h2>
+        <form id="alertForm">
+            <label for="location">Location:</label>
+            <input type="text" id="location" required>
+
+            <label for="status">Status:</label>
+            <input type="text" id="status" required>
+
+            <button type="submit">Trigger Alert</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

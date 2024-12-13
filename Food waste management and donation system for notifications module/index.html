@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Waste Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Food Waste Management & Donation</h1>
+        
+        <h2>Donate Food</h2>
+        <form id="donateForm">
+            <input type="text" id="foodItem" placeholder="Food Item" required>
+            <input type="number" id="quantity" placeholder="Quantity" required>
+            <input type="text" id="donorName" placeholder="Your Name" required>
+            <button type="submit">Donate</button>
+        </form>
+
+        <h2>Waste Food List</h2>
+        <div id="wasteList"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ticket Booking System</h1>
+
+        <div id="ticketList"></div>
+
+        <h2>Book a Ticket</h2>
+        <form id="bookingForm">
+            <label for="ticket">Select Ticket:</label>
+            <select id="ticket" required>
+                <!-- Options will be loaded here dynamically -->
+            </select>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <button type="submit">Book Ticket</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

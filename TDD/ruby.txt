@@ -1,0 +1,70 @@
+Palindrome:
+
+require "minitest/autorun"
+
+# Palindrome method (to be implemented)
+def palindrome_number?(n)
+  n.to_s == n.to_s.reverse
+end
+
+# Tests
+class PalindromeTest < Minitest::Test
+  def test_single_digit_number
+    assert palindrome_number?(5)
+  end
+
+  def test_palindrome_number
+    assert palindrome_number?(121)
+  end
+
+  def test_non_palindrome_number
+    refute palindrome_number?(123)
+  end
+
+  def test_negative_number
+    refute palindrome_number?(-121) # Negative numbers are not palindromes
+  end
+
+  def test_large_palindrome_number
+    assert palindrome_number?(12321)
+  end
+end
+
+Factorial
+
+require "minitest/autorun"
+
+# Factorial method (to be implemented)
+def factorial(n)
+  raise ArgumentError, "Number must be non-negative" if n < 0
+  (1..n).reduce(1, :*)
+end
+
+# Tests
+class FactorialTest < Minitest::Test
+  def test_factorial_of_zero
+    assert_equal 1, factorial(0)
+  end
+
+  def test_factorial_of_positive_number
+    assert_equal 120, factorial(5)
+  end
+
+  def test_factorial_of_negative_number
+    assert_raises(ArgumentError) { factorial(-5) }
+  end
+end
+
+Square numbers
+
+require "minitest/autorun"
+
+def square(num)
+  num * num
+end
+
+class TestSquare < Minitest::Test
+  def test_square
+    assert_equal 9, square(4)
+  end
+end

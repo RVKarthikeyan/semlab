@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Automation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Home Lighting Control</h1>
+
+        <div>
+            <h2>Current Lights Status</h2>
+            <ul id="lightList"></ul>
+        </div>
+
+        <h2>Control Light</h2>
+        <form id="lightForm">
+            <label for="location">Location:</label>
+            <input type="text" id="location" required>
+
+            <label for="status">Status:</label>
+            <select id="status" required>
+                <option value="ON">ON</option>
+                <option value="OFF">OFF</option>
+            </select>
+
+            <button type="submit">Set Status</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
